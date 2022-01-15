@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-
+      - uses: actions/checkout@v2
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
